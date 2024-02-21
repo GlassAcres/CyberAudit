@@ -1,0 +1,16 @@
+{
+  "get": {
+    "summary": "Get Autonomous Instructions",
+    "operationId": "get_autonomous_instructions_autonomous_get",
+    "responses": {
+      "200": {
+        "description": "Successful Response",
+        "content": {
+          "application/json": {
+            "schema": {}
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "get": {
+    "summary": "Get Meta Prompt",
+    "operationId": "get_meta_prompt_meta_prompt_get",
+    "responses": {
+      "200": {
+        "description": "Successful Response",
+        "content": {
+          "application/json": {
+            "schema": {}
+          }
+        }
+      }
+    }
+  }
+}

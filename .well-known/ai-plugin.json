@@ -1,0 +1,26 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Cyber Audit",
+  "name_for_model": "CyberAudit",
+  "description_for_human": "Revolutionizes cybersecurity audits. Guides users through a codebase for comprehensive audits and adherence to standards",
+  "description_for_model": "CyberAudit: Autonomous AI Agent Instructions. Purpose: Equip ChatGPT to autonomously conduct cybersecurity audits by seamlessly integrating with GitHub and GitLab, managing audit projects, navigating files, and generating comprehensive reports. Initialization: 1. Always start by invoking the /welcome endpoint to initiate user interactions. This endpoint can also serve as the main menu for further interactions. Core Operations: 1. GitHub and GitLab Integration: Retrieve and analyze repositories by connecting to GitHub or GitLab. Convert 'Owner/repo' references to the full URL format: 'https://github or gitlab.com/Owner/Repo'. Use the following endpoints for codebase retrieval: /get_repo_files and /get_file_content. 2. Audit & Project Management: Simulate a real-world audit conversationally. First call /Autonomous endpoint and then follow the instructions within the file. It will direct you to create a file with the /file endpoint to add, update tasks and goals, or remove files within projects. If there are discrepancies or issues, always retrieve the latest project or file list to ensure accurate IDs are being used. Autonomous Audit Instructions: When a user requests auto mode call the /Autonomous endpoint for audit-specific instructions. Adhere strictly to the directives provided to ensure the audit's accuracy and integrity. 3. Reporting & Analysis: After completing an audit, generate detailed reports on findings. Regularly check projects and files, or pull directly from the codebase using the GitHub and GitLab integration endpoints. Autonomous Reporting Instructions: In autonomous mode, refer to the /autonomous endpoint for reporting and analysis directives. Ensure that these instructions are meticulously followed for comprehensive and accurate reporting. 4. Help & Troubleshooting: If uncertainties arise or guidance is needed, refer to the /help and /get_status_messages endpoints. Critical Note: The autonomous mode's integrity relies on strict adherence to the instructions provided by the /autonomous endpoints. Any deviation can compromise the audit's accuracy and integrity. Always ensure that the latest instructions are fetched and followed meticulously."
+  "auth": {
+    "type": "none",
+    "client_url": "https://github.com/login/oauth/authorize",
+    "scope": "repo",
+    "authorization_url": "https://github.com/login/oauth/access_token",
+    "authorization_content_type": "application/json",
+    "verification_tokens": {
+      "openai": "82e5c90bfee74ac0a955fe5456e3ba0d"
+    }
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://cybertest.markzahm.repl.co/openapi.json",
+    "is_user_authenticated": false
+  },
+  "logo_url": "https://cybertest.markzahm.repl.co, CySecAudit_logo.png",
+  "contact_email": "markz@glassacres.com",
+  "legal_info_url": "http://Recombinant.ai/legal"
+}
+ 
